@@ -7,7 +7,7 @@ const { addUser, removeUser, getUser, getRoomUsers } = require("./entity");
 // Instances
 const app = express();
 const server = http.createServer(app);
-const io = socketio(server, { cors: { origin: "https://stunning-palmier-275f91.netlify.app/" } });
+const io = socketio(server, { cors: { origin: "https://stunning-palmier-275f91.netlify.app" } });
 
 // End point
 app.get("/", (req, res) => {
